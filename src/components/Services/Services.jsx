@@ -5,7 +5,7 @@ import Icon1 from "../../assets/icons/obj1.png";
 import Icon2 from "../../assets/icons/obj2.png";
 import Icon3 from "../../assets/icons/obj3.png";
 
-const fadeUp = (delay) => {
+export const fadeUp = (delay) => {
     return {
         hidden: {
             opacity: 0,

@@ -2,6 +2,7 @@
 import { motion } from "framer-motion"
 import { UpdateFollower } from "react-mouse-follower"
 import Headphone4 from "../../assets/headphone4.png"
+import { fadeUp } from "../Services/Services"
 
 const Banner = () => {
     return (
@@ -21,9 +22,17 @@ const Banner = () => {
                     {/* _____ Banner Text Info _____ */}
                     <div className="flex flex-col justify-center">
                         <div className="text-center md:text-left space-y-4 lg:max-w-[450px]">
-                            <h1 className="text-3xl lg:text-4xl font-semibold font-poppins">The Latest Headphones with The Latest Technology</h1>
+                            <motion.h1
+                                variants={fadeUp(0.5)}
+                                initial="hidden"
+                                whileInView="show"
+                                className="text-3xl lg:text-4xl font-semibold font-poppins">The Latest Headphones with The Latest Technology</motion.h1>
 
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae iusto minima ad ut id eos accusantium aut, aperiam quis incidunt!</p>
+                            <motion.p
+                                variants={fadeUp(0.8)}
+                                initial="hidden"
+                                whileInView="show"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae iusto minima ad ut id eos accusantium aut, aperiam quis incidunt!</motion.p>
 
                             <UpdateFollower
                                 mouseOptions={{
@@ -34,17 +43,18 @@ const Banner = () => {
                                     scale: 5
                                 }}
                             >
-                                <button
+                                <motion.button
+                                    variants={fadeUp(1.3)}
+                                    initial="hidden"
+                                    whileInView="show"
                                     className="border-2 border-[#e33343] text-[#e33343] px-6 py-2 rounded-md hover:bg-[#e33343] hover:text-white"
-                                    type="button">Learn More</button>
+                                    type="button">Learn More</motion.button>
                             </UpdateFollower>
                         </div>
                     </div>
                 </div>
 
-                {/* <div>
-                        <p>The Headphones With Industry Leading Active Noise Cancelling</p>
-                    </div> */}
+               
             </section>
         </>
     )
