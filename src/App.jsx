@@ -1,20 +1,33 @@
 import { UpdateFollower } from "react-mouse-follower";
-import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
+import Navbar from "./components/Navbar/Navbar";
+import Services from "./components/Services/Services";
 
 const App = () => {
   return (
     <main className="overflow-x-hidden">
+
       <UpdateFollower
         mouseOptions={{
           backgroundColor: "white",
-          zIndex: 222,
+          zIndex: 999,
           followSpeed: 1.5,
         }}
       >
         <Navbar />
-        <Hero/>
+        <Hero />
       </UpdateFollower>
+
+      <UpdateFollower
+        mouseOptions={{
+          backgroundColor: "black",
+          zIndex: 999,
+          followSpeed: 1.5,
+        }}
+      >
+        <Services />
+      </UpdateFollower>
+
     </main>
   );
 };
