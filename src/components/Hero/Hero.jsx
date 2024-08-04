@@ -1,8 +1,6 @@
-import { duration } from "@material-ui/core";
 import { AnimatePresence, easeInOut, motion } from "framer-motion";
 import { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
-import { MdOpacity } from "react-icons/md";
 import { UpdateFollower } from "react-mouse-follower";
 import Headphone1 from "../../assets/headphone.png";
 import Headphone2 from "../../assets/headphone2.png";
