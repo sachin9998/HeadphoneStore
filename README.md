@@ -3,24 +3,34 @@
 Welcome to the Animated Headphone Store! This project is a fully responsive e-commerce website designed to showcase headphones with stunning animations. Built using ReactJS, Tailwind CSS, Framer Motion, Mouse Follower, and the VITE build tool, this project is deployed on Vercel.
 
 ## Features
-    - Responsive Design: Optimized for all devices and screen sizes.
-    - Smooth Animations: Interactive UI/UX powered by Framer Motion and Mouse Follower.
-    - Fast Loading: Built with VITE for optimized performance.
-    - Modern UI: Clean and minimalistic design using Tailwind CSS.
+- Responsive Design: Optimized for all devices and screen sizes.
+- Smooth Animations: Interactive UI/UX powered by Framer Motion and Mouse Follower.
+- Fast Loading: Built with VITE for optimized performance.
+- Modern UI: Clean and minimalistic design using Tailwind CSS.
 
 ## Tech Stack
-    - ReactJS - A JavaScript library for building user interfaces.
-    - Tailwind CSS - A utility-first CSS framework.
-    - Framer Motion - A production-ready motion library for React.
-    - Mouse Follower - A library for creating interactive mouse animations.
-    - VITE - A blazing fast frontend build tool.
-    - Vercel - Cloud platform for static sites and Serverless Functions.
+- ReactJS - A JavaScript library for building user interfaces.
+- Tailwind CSS - A utility-first CSS framework.
+- Framer Motion - A production-ready motion library for React.
+- Mouse Follower - A library for creating interactive mouse animations.
+- VITE - A blazing fast frontend build tool.
+- Vercel - Cloud platform for static sites and Serverless Functions.
 
 ## Live Demo
-https://headphone-store-alpha.vercel.app/
+- https://headphone-store-alpha.vercel.app/
 
 ## Screenshots
+![Screenshot 2024-08-05 at 12 59 21 PM](https://github.com/user-attachments/assets/67fbbdb2-fe53-41b4-b766-f07764e7a004)
 
+<hr/>
+
+![Screenshot 2024-08-05 at 1 00 23 PM](https://github.com/user-attachments/assets/f1a550ab-4336-4c2d-a758-9fd230ca3228)
+
+![Screenshot 2024-08-05 at 1 00 51 PM](https://github.com/user-attachments/assets/2299daf2-ad0d-4520-a6de-5f0d494ce880)
+
+![Screenshot 2024-08-05 at 1 01 04 PM](https://github.com/user-attachments/assets/7954fcf8-2919-445d-9148-0433bb0651b0)
+
+![Screenshot 2024-08-05 at 1 02 06 PM](https://github.com/user-attachments/assets/d0f44609-ebdb-4a81-b780-e3c5ae3b1d1c)
 
 
 ### Prerequisites
