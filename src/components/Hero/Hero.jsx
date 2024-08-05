@@ -88,16 +88,11 @@ const Hero = () => {
 
   return (
     <>
-
       <section className="bg-brandDark text-white font-varela">
-
         <div className="container grid grid-cols-1 md:grid-cols-2 min-h-[700px]">
-
           {/* Headphone Info */}{" "}
           <div className="flex flex-col justify-center py-14 md:py-0 xl:max-w-[500px]">
-
             <div className="space-y-5 text-center md:text-left">
-
               {/* Headphone Title */}
               <AnimatePresence mode="wait">
                 <UpdateFollower
@@ -130,14 +125,14 @@ const Hero = () => {
                   initial="hidden"
                   animate="show"
                   exit="exit"
-                  className="text-sm leading-loose text-white/80">
+                  className="text-sm leading-loose text-white/80"
+                >
                   {activeData.description}{" "}
                 </motion.p>
               </AnimatePresence>
 
               {/* Buy and Listen button */}
               <AnimatePresence mode="wait">
-
                 <UpdateFollower
                   mouseOptions={{
                     backgroundColor: activeData.bgColor,
@@ -149,10 +144,9 @@ const Hero = () => {
                       <div>
                         <img src={activeData.image} alt="Headphone Wireless" />
                       </div>
-                    )
+                    ),
                   }}
                 >
-
                   <motion.button
                     key={activeData.id}
                     variants={fadeUp(0.3)}
@@ -167,7 +161,6 @@ const Hero = () => {
                   >
                     Buy and Listen
                   </motion.button>
-
                 </UpdateFollower>
               </AnimatePresence>
 
@@ -196,7 +189,6 @@ const Hero = () => {
                       key={item.id}
                     >
                       <div
-
                         onClick={() => handleActiveData(item)}
                         className="grid grid-cols-2 place-items-center cursor-pointer"
                       >
@@ -217,31 +209,29 @@ const Hero = () => {
               </div>
             </div>
           </div>
-
           {/* Hero Image */}
           <div className="flex flex-col justify-end items-center">
-
             <AnimatePresence mode="wait">
               <motion.img
                 key={activeData.id}
-                initial={{ opacity: 0, scale: 0.9, y: 0, }}
+                initial={{ opacity: 0, scale: 0.9, y: 0 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.2, ease: easeInOut }}
                 exit={{
-                  opacity: 0, scale: 0.9, y: 100,
+                  opacity: 0,
+                  scale: 0.9,
+                  y: 100,
 
                   transition: {
                     duration: 0.2,
-                  }
-
+                  },
                 }}
                 src={activeData.image}
-                className="w-[300px] md:w-[400px] xl:w-[550px]"
+                className="w-[300px] md:w-[550px] xl:w-[550px]"
                 alt=""
               />
             </AnimatePresence>
           </div>
-
           {/* Whatsapp Icon */}{" "}
           <div className="text-3xl text-white fixed bottom-10 right-10 hover:rotate-[360deg] duration-500 z-[99] mix-blend-difference">
             <a href="https">
@@ -249,7 +239,7 @@ const Hero = () => {
             </a>{" "}
           </div>{" "}
         </div>{" "}
-      </section > {" "}
+      </section>{" "}
     </>
   );
 };
